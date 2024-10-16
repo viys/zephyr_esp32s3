@@ -9,7 +9,7 @@ https://docs.zephyrproject.org/latest/
 ### 2.1 拉取代码
 
 ```Shell
-git clone https://github.com/viys/zephyr_create.git
+git clone https://github.com/viys/zephyr_esp32s3.git
 ```
 
 ### 2.2 安装依赖
