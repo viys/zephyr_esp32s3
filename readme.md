@@ -15,28 +15,27 @@ git clone https://github.com/viys/zephyr_esp32s3.git
 ### 2.2 安装依赖
 
 ```Shell
-cd zephyr_create/
+cd zephyr_esp32s3/
 source ~/zephyrproject/.venv/bin/activate
 west init -l project/
 west update
+west blobs fetch hal_espressif
 ```
 
 ### 2.3 工程编译
 
 ```Shell
-west build -b qemu_x86 -p auto project/
+west build -b esp32s3_devkitm -p auto project/
 ```
 
 ### 2.4 工程运行（烧录）
 
-#### 2.4.1 工程运行
-
-```Shell
-west -t run
-```
-
-#### 2.4.2 工程烧录
-
 ```Shell
 west flash
+```
+
+#### 2.5 工程运行
+
+```Shell
+west espressif monitor
 ```
